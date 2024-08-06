@@ -3,36 +3,40 @@ require 'Car.php';
 require 'Bicycle.php';
 
 $clio = new Car('red', 'electric', 5);
-echo $clio->start();
-echo $clio->forward();
-echo $clio->brake();
-echo $clio->getEnergyLevel();
+echo "Clio Actions:<br>";
+echo "Start: " . $clio->start() . "<br>";
+echo "Forward: " . $clio->forward() . "<br>";
+echo "Brake: " . $clio->brake() . "<br>";
+echo "Energy Level: " . $clio->getEnergyLevel() . "<br>";
 
 ?>
 <br>
 <?php
 
 $mercedes = new Car('blue', 'electric', 5);
-echo $mercedes->start();
-echo $mercedes->forward();
-echo $mercedes->brake();
-echo $mercedes->getEnergyLevel();
+echo "Mercedes Actions:<br>";
+echo "Start: " . $mercedes->start() . "<br>";
+echo "Forward: " . $mercedes->forward() . "<br>";
+echo "Brake: " . $mercedes->brake() . "<br>";
+echo "Energy Level: " . $mercedes->getEnergyLevel() . "<br>";
 
 ?>
 <br>
 <?php
 
 $bmx = new Bicycle('blue', 2);
-echo $bmx->forward();
-echo $bmx->brake();
+echo "BMX Bicycle Actions:<br>";
+echo "Forward: " . $bmx->forward() . "<br>";
+echo "Brake: " . $bmx->brake() . "<br>";
 
 ?>
 <br>
 <?php
 
 $vtt = new Bicycle('red', 2);
-echo $vtt->forward();
-echo $vtt->brake();
+echo "VTT Bicycle Actions:<br>";
+echo "Forward: " . $vtt->forward() . "<br>";
+echo "Brake: " . $vtt->brake() . "<br>";
 
 ?>
 <br>
